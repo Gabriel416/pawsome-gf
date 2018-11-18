@@ -1,0 +1,33 @@
+<div class="nav">
+    <ul>
+    	<li>
+        	<a href="https://pawsome-gf.herokuapp.com/">Pawsome</a>
+      	</li>
+
+      	<li>
+        	<a href="https://pawsome-gf.herokuapp.com/survey">Survey</a>
+      	</li>
+      	<li>
+        	<a href="https://pawsome-gf.herokuapp.com/quotes">Share</a>
+      	</li>
+     </ul>
+</div>
+
+
+<div class="container-fluid col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+{{#each pets}}
+<div class="pet col-xs-11">
+<img class="image-result" src="{{media.photos.[1].pn}}">
+
+	<h3 class="info">Name: {{name}}</h3>
+	<p class="info">Sex: {{sex}}</p>
+	<p class="info">Age: {{age}}</p>
+	<p class="info">Size: {{size}}</p>
+	<p class="info">Breed: {{breeds}}</p>
+	<p class="info">{{description}}</p>
+	<p class="info">City: {{contact.city}}</p>
+	<p class="info">Phone: {{contact.phone}}</p>
+	<p class="info">Email: {{contact.email}}</p>
+</div>
+{{/each}}
+</div>

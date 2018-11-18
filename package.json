@@ -1,0 +1,39 @@
+{
+  "name": "pawsome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-fileupload": "^0.1.3",
+    "express-handlebars": "^3.0.0",
+    "gm": "^1.23.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0",
+    "materialize-autocomplete": "^1.0.7",
+    "method-override": "^2.3.9",
+    "multer": "^1.3.0",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "petfinder": "^0.1.1",
+    "save": "^2.3.0",
+    "scrollmagic": "^2.0.5",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chase-UCF/pawSome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chase-UCF/pawSome/issues"
+  },
+  "homepage": "https://github.com/Chase-UCF/pawSome#readme"
+}

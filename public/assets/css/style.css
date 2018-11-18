@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    color: #ffefff;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background: url("../../../media/Snapshots/happy-aussie.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.left {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(247, 136, 47, 0.6);
+}
+
+.main-title {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.left h3 {
+    text-align: center;
+    line-height: 2.0;
+    margin-top: 50px;
+}
+
+.left button {
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #6b7a8f;
+    outline: none;
+    border: none;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #6c648b;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+}
+
+.about img {
+    align-items: flex-start;
+}
+
+#about-text {
+    margin-left: 12px;
+    background-color: #6c648b;
+}
+
+#about-text h2 {
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 44px;
+}
+
+#about-text p {
+    font-size: 22px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+}
+
+#about-text .double {
+    margin-top: 25px;
+}
+
+.get-started {
+    width: 100%;
+    /* height: 100vh;
+    background: url("Snapshots/peeking.png") no-repeat;
+   /* background-attachment: fixed;*/
+    /*background-size: cover;*/
+    /*  background-position: center;
+    background-position: bottom;
+    z-index: -1;*/
+    */
+}
+
+.get-started img {
+    position: relative;
+    bottom: 0;
+}
+
+.get-started h1 {
+    color: black;
+    margin-top: 200px;
+    padding: 12px;
+}
+
+.get-started h3 {
+    color: black;
+    margin-top: 20px;
+}
+
+.get-started button {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fly-in {
+    10% {
+        transform: translateY(80px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    70% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* mobile */
+
+@media only screen and(max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .landing {
+        width: 100%;
+        height: 100vh;
+        background: url("../../../media/Snapshots/happy-aussie-sm.jpg") no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        z-index: 1;
+    }
+    .main-title {
+        font-size: 38px;
+        margin-top: 30px;
+    }
+    .left {
+        width: 100%;
+        height: 100vh;
+        position: static;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: url("../../../media/Snapshots/pug-mobile-xs.png") no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .left h3 {
+        line-height: 1.2;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .left button {
+        font-size: 14px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .about {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        background-color: #6c648b;
+        background-attachment: scroll;
+        display: flex;
+        z-index: 1;
+    }
+    #about-text {
+        margin-left: 0px;
+        background-color: #6c648b;
+    }
+    #about-text h2 {
+        margin-top: 25px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    #about-text p {
+        font-size: 18px;
+        line-height: 1.7;
+        font-weight: 600;
+        margin: 0px 10px 0px 10px;
+    }
+    #about-text .double {
+        margin-top: 20px;
+    }
+
+    .last-text {
+        margin-bottom: 50px;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*Tablet*/
+
+@media only screen and(min-width: 750px) and(max-width: 1030px) {
+    .landing {
+        width: 100%;
+        height: 100vh;
+        background: url("../../../media/Snapshots/brown-dog-md.png") no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        z-index: 1;
+    }
+
+     .left {
+        width: 100%;
+        height: 100vh;
+        position: static;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: url("../../../media/Snapshots/brown-dog-md.png") no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+        .about {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: #6c648b;
+        background-attachment: scroll;
+        display: flex;
+        z-index: 1;
+    }
+        .last-text {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .project {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pawsome Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Volkhov" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/survey.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <div class="row">
+                <form class="col s12" action="/results" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="location" name="location" type="text" required class="validate" placeholder="Zip Code Here">
+                            <label for="location" data-error="wrong" data-success="right">
+                                <p class="locate-header">Enter a Location</p>
+                            </label>
+                        </div>
+                    </div>
+                    <h5>Does sex of dog matter to you?</h5>
+                    <p>
+                        <input checked type="radio" id="neither" name="sex" value=""  />
+                        <label for="neither">No, it doesn't matter to me.</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="boy" name="sex" value="M" />
+                        <label for="boy">Yes, I want a boy.</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="girl" name="sex" value="F" />
+                        <label for="girl">Yes, I want a girl.</label>
+                    </p>
+                    <div class="select-size">
+                        <h4>Size</h4>
+                        <p>(specify one)</p>
+                        <input type="checkbox" name="amount" id="small" value="S" class="input-hidden" />
+                        <label for="small">
+                            <h5 class="text-center">Small</h5>
+                            <center>
+                                <img src="../media/vectors/small.png">
+                            </center>
+                            <p>If you live in an apartment or travel constantly, consider choosing a small dog! Small dogs do not need as much space as larger dogs, and end up being less expensive than big dogs. This is due to food costs, bigger crates, toys, etc.</p>
+                        </label>
+                        <input type="checkbox" name="amount" id="medium" value="M" class="input-hidden" />
+                        <label for="medium">
+                            <h5 class="text-center">Medium</h5>
+                            <center>
+                                <img src="../media/vectors/medium.png">
+                            </center>
+                            <p>Medium sized dogs vary across many breeds. They are generally between 30 and 60 pounds, and are generally more healthy than small and big dogs. Medium dogs can live in apartments, however they require consistent exercise. Medium sized dogs vary from herding dogs, to couch potatoes, so treat medium sized dogs on a case by case basis.</p>
+                        </label>
+                        <input type="checkbox" name="amount" id="large" value="L" class="input-hidden" />
+                        <label for="large">
+                            <h5 class="text-center">Large</h5>
+                            <center>
+                                <img src="../media/vectors/large.png">
+                            </center>
+                            <p>If you have small children, or are looking for a guard dog, a large dog might be perfect for you! Though sometimes intimidating looking, large sized dogs can be some of the kindest animals. They make great companions for people with active lifestyles, however make sure your living space is adequately large enough because large dogs are between 60-120 pounds and need lots of exercise.</p>
+                        </label>
+                    </div>
+                    <h4 class="age-selector">Age</h4>
+                    <p>(specify one)</p>
+                    <p>
+                        <input type="checkbox" id="puppy" name="age" value="baby" />
+                        <label for="puppy">
+                            <h5 class="text-center">Puppy</h5></label>
+                        <p>Puppies are cute and full of energy. Like human babies, puppies need lots of attention and supervision. Puppies will need to be trained from scratch and socialized properly. If you have a lot of time to devote, then a puppy might be right for you!</p>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="young" name="age" value="young" />
+                        <label for="young">
+                            <h5 class="text-center">Young</h5></label>
+                        <p>Young dogs still have bundles of energy in them and need constant exercise. While most young dogs have basic training, it is your job to continue the training and fix some bad habits the dog picked up as a puppy. A young dog is great for someone who wants to see a dog mature emotionally and physically.</p>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="adult" name="age" value="adult" />
+                        <label for="adult">
+                            <h5 class="text-center">Adult</h5></label>
+                        <p>First time dog owners should consider adopting an adult dog. Adult dogs are physically and emotionally matured. You know what you are getting when adopting an adult dog. Adult dogs require less supervision than younger dogs and will be very loyal towards you.</p>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="senior" name="age" value="senior" />
+                        <label for="senior">
+                            <h5 class="text-center">Senior</h5></label>
+                        <p>If you want a sweet loving dog that will be by your side constantly, a senior dog will be perfect. Senior dogs are gentle, and will thank you for making their last years their best years Often overlooked at shelters for younger dogs, many older dogs don't get the chance to find a loving family even though they fit many living arrangements.</p>
+                    </p>
+                    <h4 class="drop-down-title">Does breed of dog matter to you?</h4>
+                    <p>
+                        <input class="yes" type="radio" id="yes" name="breed" />
+                        <label for="yes">Yes</label>
+                    </p>
+                    <p>
+                        <input class="no" checked type="radio" id="no" name="breed" />
+                        <label for="no">No</label>
+                    </p>
+                    <p>
+                        <input class="blah" type="text" id="breed-selector" name="specific"  />
+                        <label id="blah" for="breed-selector">Enter Breed</label>
+                    </p>
+                    <center>
+                        <button class="btn btn-info text-center" type="submit">Enter</button>
+                    </center>
+                </form>
+            </div>
+            <div id="push">
+             <footer class="text-center" id="icon-ref">
+                <p>Icons provided here <a href="http://www.freepik.com/free-photos-vectors/dog">Dog vector created by Freepik</a></p>
+            </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="../public/assets/survey.js"></script>
+</body>
+
+</html>
